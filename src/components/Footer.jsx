@@ -7,7 +7,7 @@ function Footer() {
     <div className="footer">
       <footer>
         <img
-          src="../../assets/Library.svg"
+          src="assets/Library.svg"
           alt="footer library logo"
           className="footer__logo"
         ></img>
