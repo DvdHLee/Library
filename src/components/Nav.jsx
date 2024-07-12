@@ -26,7 +26,7 @@ function Nav( {cartData} ) {
       <nav>
         <Link to="/" className="nav__link--button">
           <img
-            src="assets/Library.svg"
+            src={`${process.env.PUBLIC_URL}/assets/Library.svg`}
             alt="library logo"
             className="logo"
           ></img>

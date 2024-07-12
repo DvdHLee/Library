@@ -115,7 +115,7 @@ function Cart({ cartData, updateCart }) {
           ) : (
             <div className="empty__cart">
               <img
-                src="assets/empty_cart.svg"
+                src={`${process.env.PUBLIC_URL}/assets/empty_cart.svg`}
                 alt="empty cart img"
                 className="empty__cart--img"
               />

@@ -26,7 +26,7 @@ function Home( {cartData} ) {
             Browse Books
           </Link>
         </div>
-        <img src="assets/Undraw_Books.svg" alt="" className="introimg"></img>
+        <img src={`${process.env.PUBLIC_URL}/assets/Undraw_Books.svg`} alt="" className="introimg"></img>
       </section>
       <section id="highlights">
         <h2 className="section__title">
