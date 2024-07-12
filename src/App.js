@@ -41,7 +41,7 @@ function App() {
           <Route path='/' element={<Home cartData={cartData}/>}></Route>
           <Route path='/Books' element={<BooksPage cartData={cartData}/>}></Route>
           <Route path='/Cart' element={<Cart cartData={cartData} updateCart={updateCart}/>}></Route>
-          <Route path='/Books/:id' element={<BookPage cartData={cartData} addToCart={addToCart}/>}></Route>
+          <Route path='/:id' element={<BookPage cartData={cartData} addToCart={addToCart}/>}></Route>
         </Routes>
       </Router>
     </div>
