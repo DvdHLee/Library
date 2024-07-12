@@ -1,0 +1,44 @@
+.bookspage {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bookspage__content {
+  width: 100%;
+  flex: 1;
+  background-color: rgba(115, 66, 214, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bookspage__container {
+  margin: 20px 0;
+  padding: 0 30px;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#filter {
+  height: 30px;
+}
+
+.books__title {
+  font-size: 30px;
+  height: 40px;
+}
+
+.book__stars {
+  color: #fabf2a;
+  margin-bottom: 10px;
+}
+
+.discount {
+  text-decoration: line-through;
+  color: gray;
+}

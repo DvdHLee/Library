@@ -1,0 +1,153 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px;
+  padding: 30px 50px;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+}
+
+.nav__links {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  justify-content: space-between;
+  align-items: center;
+  color: #7342d6;
+  font-weight: 700;
+}
+
+.nav__link:first-child {
+  position: relative;
+}
+
+.nav__link:first-child:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #7342d6;
+  width: 0;
+  bottom: -4px;
+  right: 0;
+  transition: all 300ms ease;
+}
+
+.nav__link:first-child:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.nav__link:nth-last-child(2) {
+  border: 2px solid #7342d6;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.nav__link:nth-last-child(2):hover {
+  border: 2px solid rgb(204, 115, 255);
+}
+
+.btn__menu {
+  display: none;
+}
+
+.menu__backdrop {
+  display: none;
+}
+
+.nav__link--cart {
+  position: relative;
+}
+
+.cart__length {
+  position: absolute;
+  font-size: 11px;
+  bottom: -5px;
+  right: -7px;
+  background-color: red;
+  color: white;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .nav__link {
+    display: none;
+  }
+
+  .nav__links {
+    width: fit-content;
+  }
+
+  .nav__link--cart {
+    display: flex;
+  }
+
+  .btn__menu {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    padding: 0;
+    background: none;
+    border: none;
+    color: #7342d6;
+  }
+
+  .menu__backdrop {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #242424;
+    color: white;
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+  }
+
+  .menu--open * {
+    max-height: 100vh;
+    overflow: hidden;
+  }
+
+  .menu--open .menu__backdrop {
+    display: flex;
+  }
+
+  .btn__menu--close {
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    color: white;
+  }
+
+  .btn__menu--list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn__menu--item {
+    font-size: 40px;
+    margin: 20px 0;
+  }
+}
